@@ -1,0 +1,15 @@
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\bin\Debug\net6.0\Storyline combined with battle systems.exe
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\bin\Debug\net6.0\Storyline combined with battle systems.deps.json
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\bin\Debug\net6.0\Storyline combined with battle systems.runtimeconfig.json
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\bin\Debug\net6.0\Storyline combined with battle systems.dll
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\bin\Debug\net6.0\Storyline combined with battle systems.pdb
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\obj\Debug\net6.0\Storyline combined with battle systems.csproj.AssemblyReference.cache
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\obj\Debug\net6.0\Storyline combined with battle systems.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\obj\Debug\net6.0\Storyline combined with battle systems.AssemblyInfoInputs.cache
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\obj\Debug\net6.0\Storyline combined with battle systems.AssemblyInfo.cs
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\obj\Debug\net6.0\Storyline combined with battle systems.csproj.CoreCompileInputs.cache
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\obj\Debug\net6.0\Storyline combined with battle systems.dll
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\obj\Debug\net6.0\refint\Storyline combined with battle systems.dll
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\obj\Debug\net6.0\Storyline combined with battle systems.pdb
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\obj\Debug\net6.0\Storyline combined with battle systems.genruntimeconfig.cache
+C:\Users\529564\source\repos\Storyline combined with battle systems\Storyline combined with battle systems\obj\Debug\net6.0\ref\Storyline combined with battle systems.dll
