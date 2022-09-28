@@ -11,7 +11,7 @@ public class MyProgram
 
         right = false;
         Console.WriteLine("You wake up in the middle of a forest. You're trying to remember what you were doing before you ended up here");
-        sleep(5);
+        sleep(2);
         Console.WriteLine("You can't remember what happened but decide that a wonder in the fresh air will help. ");
         Console.ForegroundColor = ConsoleColor.Blue;
         Console.Write("Do you want to walk or stay?");
@@ -21,12 +21,12 @@ public class MyProgram
         {
             Console.WriteLine("You walk forward and eventually reach a junction, on the left there is more path, on the right there is a house with what looks like to be signs of life");
 
-            sleep(5);
+            sleep(2);
         }
         else
         {
             Console.WriteLine("After a while you realise that nothing is going to happen, please move forward to progress");
-            sleep(5);
+            sleep(2);
 
             Console.WriteLine("You walk forward and eventually reach a junction, on the left there is more path, on the right there is a house with what looks like to be signs of life");
         }
@@ -117,15 +117,16 @@ public class MyProgram
                 }
             }
 
-            sleep(5);
+            sleep(2);
         }
         Console.WriteLine("The person who opens the door is an elf looking creature and they ask you your name");
 
-        sleep(5);
+        sleep(2);
         Console.WriteLine("You say that your name is Aeryn and that you woke up in the middle of the forest not knowing what happened beforehand");
 
-        sleep(5);
+        sleep(2);
         Console.WriteLine("The elf invites you in. ");
+        sleep(2);
         Console.ForegroundColor = ConsoleColor.Blue;
         Console.Write("Do you go inside?");
         Console.ForegroundColor = ConsoleColor.White;
@@ -139,10 +140,10 @@ public class MyProgram
         }
         Console.WriteLine("You enter the small home and see that there is a bookshelf and a bed and not much else");
 
-        sleep(5);
+        sleep(2);
         Console.WriteLine("You notice the dog");
 
-        sleep(5);
+        sleep(2);
         Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine("Do you want to pet the dog");
         Console.ForegroundColor = ConsoleColor.White;
@@ -151,7 +152,7 @@ public class MyProgram
         {
             Console.WriteLine("You go to pet the dog but it bites you hand, except you don't feel anything because you hand is skeletal");
 
-            sleep(5);
+            sleep(2);
         }
         else
         {
@@ -159,24 +160,165 @@ public class MyProgram
         }
         Console.WriteLine("Violet wants to join you in your quest to find other people, you see a caslte in the background and you go toward it");
 
-        sleep(5);
+        sleep(2);
         Console.WriteLine("you travel toward it but before you could get there you sense something from within the forest");
 
-        sleep(5);
+        sleep(2);
         Typewrite("Something appears infront of you stopping you from continuing");
-        Console.WriteLine("");
-        sleep(3);
+        
+        sleep(2);
         Battlesystem();
 
-        sleep(5);
+        sleep(2);
        Typewrite("WOAH, that was a difficult boss, but don't worry you'll face them again");
-       Console.WriteLine("");
+       
 
+        Console.WriteLine("After a while, you end up infront of the castle and you notice that there are demon guards along the battlements. Once you reach the gate a (what looks to be) a leader demon ontop of said gate");
+
+        sleep(2);
+        Console.WriteLine("The demon asks who you are and why you are here. do you either, ");
+        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.WriteLine("let Violet explain or explain");
+        Console.ForegroundColor = ConsoleColor.White;
+        movement = Console.ReadLine();
+        if (movement == "explain")
+        {
+            Console.WriteLine("you explain who you guys are and why your here");
+        }
+        else
+        {
+            Console.WriteLine("you urgue Violet to explain and Violet glares at you but then explains who you guys are and what your doing here");
+        }
+
+        sleep(2);
+        Console.WriteLine("The demon introduces themself as Varron and asks why they should let an elf and a skeleton into their kingdom");
+
+        sleep(2);
+        Console.WriteLine("You explain that they don't have to let you in as you can stand outside for a while");
+
+        sleep(2);
+        Console.WriteLine("Varron gets pissed and decides to leave you out there until you can prove yourself");
+
+        sleep(2);
+        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.WriteLine("Do you fight Varron?");
+        Console.ForegroundColor = ConsoleColor.White;
+        movement = Console.ReadLine();
+        if (movement == "yes")
+        {
+            Console.WriteLine("Your crazy if you think your going to win");
+            movement = Console.ReadLine();
+            if (movement == "yes") 
+            {
+                Console.WriteLine("Aight, if you really wanna do this, input yes again. but i am warning you");
+                movement = Console.ReadLine();
+                if (movement == "yes")
+                {
+                    Console.WriteLine("Here we go, don't say I didn't warn you");
+
+                    sleep(2);
+                    Varronfight();
+                }
+                else
+                {
+                    Console.WriteLine("You ask Varron if there is another way to prove yourself");
+                }
+            }
+            else
+            {
+                Console.WriteLine("You ask Varron if there is another way to prove yourself");
+            }
+        }
+        else
+        {
+            Console.WriteLine("You ask Varron if there is another way to prove yourself");
+        }
     }
-    
-    
 
-public static void Battlesystem()
+    public static void Varronfight()
+    {
+        int playerhealth;
+        int enemyhealth;
+        int playerstrength;
+        int enemystrength;
+        int enemychoice;
+
+        playerhealth = 250;
+        enemyhealth = 300;
+        playerstrength = 50;
+        enemystrength = 75;
+        string varFight;
+
+        Typewrite("Does the player want to fight. I'm making sure that you have a second chance at this, quit now or you probably won't make it");
+        
+        varFight = Console.ReadLine();
+        if (varFight == "yes")
+        {
+            Typewrite("Varron approaches");
+            sleep(2);
+            Typewrite("The battle begins");
+            while (enemyhealth > 0 && playerhealth > 0)
+            {
+                playerstrength = 50;
+                enemystrength = 75;
+                Typewrite("Are you attcking or defending");
+                string attDef;
+
+                attDef = Console.ReadLine();
+                if (attDef == "attack" && playerhealth > 0)
+                {
+                    Typewrite("you have decided to attack");
+                }
+                else
+                {
+                    Typewrite("you have decided to defend");
+                    enemystrength = 0;
+                    playerstrength = 0;
+                }
+                enemychoice = random.Next(3);
+                if (enemychoice == 1)
+                {
+                    Typewrite("Your enemy attacks you");
+                }
+                else
+                {
+                    if (enemychoice == 2)
+                    {
+                        Typewrite("Your enemy defends");
+                        playerstrength = 0;
+                        enemystrength = 0;
+                    }
+                    else
+                    {
+                        Typewrite("The enemy gets distracted by one of the guards");
+                        enemystrength = 0;
+                    }
+                }
+                enemyhealth = enemyhealth - playerstrength;
+                playerhealth = playerhealth - enemystrength;
+                Typewrite("enemy health is " + enemyhealth);
+                Typewrite("player health is " + playerhealth);
+            }
+            if (playerhealth > 0)
+            {
+                Typewrite("you win the battle. how the hell did you do that?");
+            }
+            else
+            {
+                Typewrite("Varron thinks your worthy and lets you enter the castle");
+            }
+        }
+        else
+        {
+            Typewrite("you skip the battle");
+        }
+    }
+
+
+
+
+    
+    public static void Battlesystem()
     {
         int defendchance;
         int playerhealth;
@@ -190,31 +332,29 @@ public static void Battlesystem()
         playerstrength = 50;
         enemystrength = 100;
         string varFight;
-
+        Console.ForegroundColor = ConsoleColor.Blue;
         Typewrite("Does the player want to fight");
-        Console.WriteLine("");
+        Console.ForegroundColor = ConsoleColor.White;
         varFight = Console.ReadLine();
         if (varFight == "yes")
         {
             Typewrite("Your enemy approches");
-            Console.WriteLine("");
-            sleep(3);
+            sleep(2);
             Typewrite("The battle begins");
-            Console.WriteLine("");
             while (enemyhealth > 0 && playerhealth > 0)
             {
                 playerstrength = 50;
                 enemystrength = 100;
                 sleep(2);
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Typewrite("Are you attcking or defending");
-                Console.WriteLine("");
+                Console.ForegroundColor = ConsoleColor.White;
                 string attDef;
 
                 attDef = Console.ReadLine();
                 if (attDef == "attack" && playerhealth > 0)
                 {
                     Typewrite("you have decided to attack");
-                    Console.WriteLine("");
                 }
                 else
                 {
@@ -222,14 +362,13 @@ public static void Battlesystem()
                     if (defendchance < 5)
                     {
                         Typewrite("you have decided to defend");
-                        Console.WriteLine("");
                         enemystrength = 0;
                         playerstrength = 0;
                     }
                     else
                     {
                         Typewrite("you failed to defend");
-                        Console.WriteLine("");
+                        playerstrength = 0;
                     }
 
                 }
@@ -237,7 +376,6 @@ public static void Battlesystem()
                 if (enemychoice == 1)
                 {
                     Typewrite("Your enemy attacks you");
-                    Console.WriteLine("");
                 }
                 else
                 {
@@ -245,38 +383,32 @@ public static void Battlesystem()
                     if (defendchance < 5)
                     {
                         Typewrite("enemy has decided to defend");
-                        Console.WriteLine("");
                         enemystrength = 0;
                         playerstrength = 0;
                     }
                     else
                     {
                         Typewrite("enemy failed to defend");
-                        Console.WriteLine("");
+                        enemystrength = 0;
                     }
                 }
                 enemyhealth = enemyhealth - playerstrength;
                 playerhealth = playerhealth - enemystrength;
                 Typewrite("enemy health is " + enemyhealth);
-                Console.WriteLine("");
                 Typewrite("player health is " + playerhealth);
-                Console.WriteLine("");
             }
             if (playerhealth > 0)
             {
                 Typewrite("you won the battle");
-                Console.WriteLine("");
             }
             else
             {
                 Typewrite("The boss is too strong for you right now, come back when you are more geared up");
-                Console.WriteLine("");
             }
         }
         else
         {
             Typewrite("you skip the battle");
-            Console.WriteLine("");
         }
     }
 
@@ -301,5 +433,6 @@ public static void Battlesystem()
             Console.Write(message[i]);
             System.Threading.Thread.Sleep(40);
         }
+        Console.WriteLine("");
     }
 }
